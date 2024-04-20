@@ -1,0 +1,11 @@
+<app-menu-bar></app-menu-bar>
+<div class="container">
+	<div *ngFor="let game of games">
+		<app-cards
+			gameCover="{{ game.image }}"
+			gameLabel="{{ game.label }}"
+			gamePrice="{{ game.price }}"
+			gameType="{{ game.type }}"
+		></app-cards>
+	</div>
+</div>
